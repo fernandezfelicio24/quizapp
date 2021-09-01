@@ -1,24 +1,40 @@
-import logo from './logo.svg';
+
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
+import BcImage from './assets/ques1.png'
+import Footer from './components/Footer';
+import Header from './components/Header';
+import Home from './pages/Home';
+import Quiz from './pages/Quiz';
+import Result from './pages/Result';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="app" style={{backgroundImage: `url(${BcImage})`}}> 
+          
+        <Header/>
+        <Switch>
+
+          <Route path='/' exact>
+              <Home/>
+          </Route>
+
+          <Route path='/quiz' >
+              <Quiz/>
+          </Route>
+
+          <Route path='/result' >
+              <Result/>
+          </Route>
+          
+        </Switch>
+      </div>
+    
+    
+      <Footer/>
+    </BrowserRouter>
   );
 }
 
