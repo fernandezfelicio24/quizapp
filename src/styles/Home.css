@@ -36,7 +36,7 @@
     }
 }
 
-.settings__select {
+.settings_select {
     display: flex;
     flex-direction: column;
     padding: 20px;

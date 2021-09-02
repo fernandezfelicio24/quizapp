@@ -7,9 +7,16 @@ import Header from './components/Header';
 import Home from './pages/Home';
 import Quiz from './pages/Quiz';
 import Result from './pages/Result';
-
+import {useState} from 'react'
 
 function App() {
+
+    const [name, setName] = useState("");
+
+    const fetchQuestion = () => {
+
+    }
+
   return (
     <BrowserRouter>
       <div className="app" style={{backgroundImage: `url(${BcImage})`}}> 
@@ -18,7 +25,7 @@ function App() {
         <Switch>
 
           <Route path='/' exact>
-              <Home/>
+              <Home name={name} setName={setName} fetchQuestion={fetchQuestion} />
           </Route>
 
           <Route path='/quiz' >
