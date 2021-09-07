@@ -14,7 +14,7 @@ import Result from './pages/Result';
 
 //Style & Css
 import './App.css';
-import BcImage from './assets/test3.jpg'
+import BcImage from './assets/ques1.png'
 
 function App() {
 
@@ -40,11 +40,11 @@ function App() {
         <Header/>
         <Switch>
 
-          <Route path='/' exact>
+          <Route path='/paijo' exact>
               <Home name={name} setName={setName} fetchQuestion={fetchQuestion} />
           </Route>
 
-          <Route path='/quiz' >
+          <Route path='/paijo/quiz' >
               <Quiz
               name={name}
               questions={questions}
@@ -55,7 +55,7 @@ function App() {
               />
           </Route>
 
-          <Route path='/result' >
+          <Route path='/paijo/result' >
               <Result
               name={name}
               score={score}

@@ -28,7 +28,7 @@ function Home({name, setName, fetchQuestion}) {
         }else{
             setError(false)
             fetchQuestion(category, difficulty)
-            history.push("/quiz")
+            history.push("/paijo/quiz")
         }
     };   
     return (

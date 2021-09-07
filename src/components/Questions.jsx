@@ -41,9 +41,10 @@ function Questions({currQues,setCurrQues,questions, options,correct,score, setSc
             }
 
             const history = useHistory();
+
             const handleNext = () => {
                 if(currQues > 8){
-                    history.push("/result")
+                    history.push("/paijo/result")
                 } else if (selected) {
                     setCurrQues(currQues + 1)
                     setSelected()
@@ -73,7 +74,7 @@ function Questions({currQues,setCurrQues,questions, options,correct,score, setSc
                     color="secondary"
                     size="large"
                     style={{width: 185}}
-                    href="/"
+                    href="/paijo"
                     onClick={handleQuit}
                     >Quit</Button>
 

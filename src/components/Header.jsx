@@ -9,7 +9,7 @@ function Header() {
     return (
 
         <div className="header">
-            <Link to="/" className="title">
+            <Link to="/paijo" className="title">
             Intuitive Quiz PAIJO
             <hr className="divider"/>
             </Link>

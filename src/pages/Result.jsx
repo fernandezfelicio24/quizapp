@@ -26,7 +26,7 @@ function Result({name, score}) {
             color="secondary"
             size="large"
             style={{alignSelf: "center", marginTop: 20}}
-            href="/"
+            href="/paijo"
             >
                 Go To Homepage
             </Button>
