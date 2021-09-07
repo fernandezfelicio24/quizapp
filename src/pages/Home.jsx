@@ -9,6 +9,7 @@ import ErrorMessage from '../components/ErrorMessage'
 
 
 function Home({name, setName, fetchQuestion}) {
+    
         const [category, setCategory] = useState("");
         const [difficulty, setDifficulty] = useState("");
         const [error, setError] = useState(false);

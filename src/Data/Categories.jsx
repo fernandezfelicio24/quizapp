@@ -23,7 +23,7 @@ const Categories = [
     { category: "Animals", value: 27 },
     { category: "Vehicles", value: 28 },
     { category: "Comics", value: 29 },
-    { category: "Gadgets", value: 30 },
+    // { category: "Gadgets", value: 30 },
     { category: "Japanese Anime", value: 31 },
     { category: "Cartoon and Animations", value: 32 },
 ];
