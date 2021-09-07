@@ -1,9 +1,16 @@
+//React library
 import React from 'react'
 import {useState} from 'react'
 import { useHistory } from "react-router";
-import ErrorMessage from './ErrorMessage';
+
+//Style & Css
 import '../styles/Questions.css'
+
+//Material UI components
 import { Button } from '@material-ui/core';
+
+//External Import
+import ErrorMessage from './ErrorMessage';
 
 
 function Questions({currQues,setCurrQues,questions, options,correct,score, setScore}) {

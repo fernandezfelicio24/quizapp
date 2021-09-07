@@ -1,10 +1,17 @@
+//React library
 import React from 'react'
-import '../styles/Home.css'
-import bannerimage from '../assets/quiz.svg'
-import {Button, MenuItem, TextField,} from "@material-ui/core"
-import Categories from '../Data/Categories'
 import {useState} from 'react'
 import { useHistory } from 'react-router'
+
+//Style & Css
+import '../styles/Home.css'
+import bannerimage from '../assets/quiz.svg'
+
+//Material UI components
+import {Button, MenuItem, TextField,} from "@material-ui/core"
+
+//External Import
+import Categories from '../Data/Categories'
 import ErrorMessage from '../components/ErrorMessage'
 
 

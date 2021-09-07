@@ -1,7 +1,14 @@
+//React library
 import React from 'react'
 import { useEffect, useState } from 'react'
+
+//Style & Css
 import '../styles/Quiz.css'
+
+//Material UI components
 import { CircularProgress} from "@material-ui/core"
+
+//External Import
 import Questions from '../components/Questions';
 
 function Quiz({name, questions, score, setScore, setQuestions}) {
